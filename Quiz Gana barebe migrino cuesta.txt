@@ -1,0 +1,142 @@
+package quiz;
+
+import java.util.Scanner;
+
+public class Quiz {
+
+    public static void main(String[] args) {
+      //Philippine trivia questions 
+      
+    String answer;
+    // int Score = 0;
+      
+      boolean retake = true ;
+      
+      while (retake) {
+          
+         int Score = 0;
+      
+      
+      Scanner scanner;
+      scanner = new Scanner (System.in);
+      
+      //Q1
+        System.out.println("1. What is the current highest currency in the country?") ;
+        System.out.println("A. 100") ;
+        System.out.println("B. 500") ;
+        System.out.println("C. 1000") ;
+        System.out.println("D. 50") ;
+        System.out.print("Enter your answer: ") ;
+        answer = scanner.nextLine();                
+        
+       
+    if (answer.contains("c") || answer.contains("C")){   
+         System.out.println("Your Answer is Correct");
+         Score += 1;    
+    }        
+    else { 
+        System.out.println("you are wrong" );        
+        System.out.println("the correct asnwer is C.") ;
+    }   
+
+    //Q2          
+        System.out.println("2. How many island are in the philippines?") ;
+        System.out.println("A. 10023") ;
+        System.out.println("B. 7641") ;
+        System.out.println("C. 465") ;
+        System.out.println("D. 4923") ;
+        System.out.print("Enter your answer: ") ;
+         answer = scanner.nextLine();  
+         
+     if (answer.contains("b") || answer.contains("B")){   
+         System.out.println("Your Answer is Correct");
+         Score += 1;    
+    }        
+    else { 
+        System.out.println("you are wrong" );
+        System.out.println("the correct asnwer is B.") ;
+        
+     }   
+    //Q3    
+   
+        
+        System.out.println("3. What is the capital of the philippines?") ;
+        System.out.println("A. Cagayan De Oro") ;
+        System.out.println("B. Davao") ;
+        System.out.println("C. Cebu") ;
+        System.out.println("D. Manila") ;
+        System.out.print("Enter your answer: ") ;
+         answer = scanner.nextLine();  
+        
+         
+        if (answer.contains("d") || answer.contains("D")){   
+         System.out.println("Your Answer is Correct");
+         Score += 1;    
+    }        
+    else { 
+        System.out.println("you are wrong" );
+        System.out.println("the correct asnwer is D.") ;
+   
+        }
+    
+    //Q4
+        System.out.println("4. When does the philippines celebrate its independence day?") ;
+        System.out.println("A. may 17") ;
+        System.out.println("B. april 15") ;
+        System.out.println("C. february 14") ;
+        System.out.println("D. june 12") ;
+        System.out.print("Enter your answer: ") ;
+         answer = scanner.nextLine();  
+        
+         
+        if (answer.contains("d") || answer.contains("D")){   
+         System.out.println("Your Answer is Correct");
+         Score += 1;    
+    }        
+    else { 
+        System.out.println("you are wrong" );
+        System.out.println("the correct asnwer is D.") ;
+   
+        }
+    
+    //Q5  
+        System.out.println("5. Where is mayon volcano located?") ;
+        System.out.println("A. Legazpi City") ;
+        System.out.println("B. Negros Oriental") ;
+        System.out.println("C. Samar") ;
+        System.out.println("D. Digos") ;
+        System.out.print("Enter your answer: ") ;
+         answer = scanner.nextLine();  
+        
+         
+        if (answer.contains("a") || answer.contains("A")){   
+         System.out.println("Your Answer is Correct");
+         Score += 1;    
+    }        
+    else { 
+        System.out.println("you are wrong" );
+        System.out.println("the correct asnwer is D.") ;
+   
+        }
+        
+        System.out.println("******************************");
+        System.out.println("Thanks for answering our quiz");
+        System.out.println("******************************");
+        System.out.println("Your score is: " + Score);
+        System.out.println("Do you want to take the Quiz again?");
+        System.out.println("(Y) yes or (N)No");
+        String again = scanner.nextLine() ;
+        
+        if (again.equals ("Y") || again.equals ("y")) {
+           retake = true;              
+        } 
+           
+        else {
+            retake = false;
+            System.out.println("Thanks for taking our short quiz") ;
+        }
+         
+        
+        
+    }
+}    
